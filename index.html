@@ -160,6 +160,7 @@
       cursor: pointer;
       gap: 0.65rem;
       letter-spacing: 0.03em;
+      white-space: nowrap; /* Forces call text onto a single row */
     }
 
     /* Primary high-contrast buttons */
@@ -232,8 +233,8 @@
        3. HIGH-CONTRAST LIGHT BLUE TOP BAR
        -------------------------------------------------------------------------- */
     .top-bar {
-      background-color: var(--secondary-light); 
-      color: #1e3a8a; 
+      background-color: var(--secondary-light); /* Light Blue base */
+      color: #1e3a8a; /* Navy blue for clear contrast */
       font-size: 0.875rem;
       padding: 0.6rem 0;
       border-bottom: 1px solid var(--border);
@@ -525,6 +526,7 @@
       align-items: center;
       gap: 0.5rem;
       margin-top: auto;
+      white-space: nowrap;
     }
 
     .service-link:hover {
@@ -863,6 +865,7 @@
       transition: var(--transition);
       letter-spacing: 0.03em;
       box-shadow: 0 4px 15px rgba(29, 78, 216, 0.25);
+      white-space: nowrap;
     }
 
     .call-hotline-btn:hover {
@@ -929,6 +932,7 @@
       border-radius: 8px;
       letter-spacing: 0.02em;
       animation: pulse 2s infinite;
+      white-space: nowrap;
     }
 
     @keyframes pulse {
@@ -1045,7 +1049,10 @@
       }
     }
 
-    @media (max-width: 768px) {
+    /* 
+       Dynamic Scaling of Button Font Sizes & Padding on standard mobile displays 
+    */
+    @media (max-width: 480px) {
       body {
         padding-bottom: 80px; 
       }
@@ -1118,16 +1125,32 @@
       .mobile-sticky-bar {
         display: block;
       }
+      
+      /* Adaptive font & padding values for better mobile legibility without wrapping */
+      .hero-call-btn {
+        font-size: 0.95rem !important;
+        padding: 0.85rem 1.25rem !important;
+      }
+      .mobile-call-btn {
+        font-size: 0.95rem !important;
+        padding: 0.9rem !important;
+      }
+      .call-hotline-btn {
+        font-size: 1.1rem !important;
+        padding: 1rem !important;
+      }
     }
 
-    @media (max-width: 480px) {
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    /* Scaling rules strictly targeting ultra-narrow phone screens (e.g., iPhone SE) */
+    @media (max-width: 360px) {
+      .mobile-call-btn {
+        font-size: 0.825rem !important;
+        padding: 0.8rem !important;
+        gap: 0.4rem !important;
       }
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
+      .mobile-call-btn .phone-icon-svg {
+        width: 18px;
+        height: 18px;
       }
     }
   </style>
@@ -1504,7 +1527,6 @@
             <div class="info-details">
               <div class="info-row">
                 <div class="info-icon-box">
-                  <!-- Typo corrected: "19.79 19.79 0" replaces old corrupt "19.79(19.79) 0" -->
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 </div>
                 <div class="info-text-box">
