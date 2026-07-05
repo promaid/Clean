@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>ProMaid Cleaners LLC | Professional House Cleaning & Maid Services</title>
+  <meta name="description" content="ProMaid Cleaners LLC provides top-rated local house cleaning, deep cleaning, and move-out cleaning services. Professional, insured, and trusted local maid service near you. Call (321) 462-7875 for a free estimate over the phone.">
+  <meta name="keywords" content="house cleaning, maid service, deep cleaning, move out cleaning, cleaners near me, local maid service, residential cleaning, home cleaning, ProMaid Cleaners">
+  <link rel="canonical" href="https://promaidcleaners.github.io/">
+
+  <!-- Open Graph Meta Tags (Social Media & Trust Optimization) -->
+  <meta property="og:title" content="ProMaid Cleaners LLC | Trusted Home Cleaning & Maid Services">
+  <meta property="og:description" content="Reliable, insured, and highly-detailed local house cleaning services near you. Call us today.">
+  <meta property="og:image" content="hero-image.jpg">
+  <meta property="og:url" content="https://promaidcleaners.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* --------------------------------------------------------------------------
+       1. VARIABLES, RESET & BASE STYLES
+       -------------------------------------------------------------------------- */
+    :root {
+      --primary: #1d4ed8;          /* High-Contrast Royal Blue */
+      --primary-hover: #1e40af;    /* Deep Navy Blue for Hover states */
+      --secondary: #0ea5e9;        /* Sky Blue */
+      --secondary-light: #e0f2fe;  /* Soft Blue Tint */
+      --dark: #0f172a;             /* Deep Slate Text */
+      --light: #f8fafc;            /* Clean Page Background */
+      --white: #ffffff;
+      --gray-text: #475569;        /* Body Paragraph Color */
+      --border: #e2e8f0;           /* Soft Border */
+      --accent-green: #22c55e;     /* "Open Now" Green */
+      --accent-red: #ef4444;       /* "Closed Now" Red */
+      --max-width: 1200px;
+      --border-radius: 12px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    /* --------------------------------------------------------------------------
+       SMART RESPONSIVE IMAGE CONTAINER SYSTEM
+       -------------------------------------------------------------------------- */
+    .smart-img-container {
+      position: relative;
+      width: 100%;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--secondary-light) 0%, #bae6fd 100%);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .smart-img-container::before {
+      content: attr(data-placeholder);
+      position: absolute;
+      font-family: monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gray-text);
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 0.35rem 0.75rem;
+      border-radius: 4px;
+      z-index: 1;
+      pointer-events: none;
+      text-align: center;
+    }
+
+    .smart-img-container img {
+      position: relative;
+      z-index: 2; 
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      object-position: center;
+      display: block;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .smart-img-container img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Context-specific aspect ratios */
+    .hero-img-container {
+      height: 480px;
+    }
+
+    /* Square ratio 1:1 logo container */
+    .logo-img-container {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      max-width: 440px; 
+      margin: 0 auto;
+    }
+
+    .service-img-container {
+      height: 200px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* --------------------------------------------------------------------------
+       2. UTILITIES & TYPOGRAPHY
+       -------------------------------------------------------------------------- */
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--dark);
+    }
+
+    .text-blue {
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 800; 
+      font-size: 1rem;
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+      gap: 0.65rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* Primary high-contrast buttons */
+    .btn-primary {
+      background-color: var(--primary);
+      border: 1px solid var(--primary);
+      box-shadow: 0 4px 10px rgba(29, 78, 216, 0.2);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(29, 78, 216, 0.35);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--secondary-light);
+      transform: translateY(-2px);
+    }
+
+    .section-padding {
+      padding: 5rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-header h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-header p {
+      color: var(--gray-text);
+      font-size: 1.1rem;
+    }
+
+    /* --------------------------------------------------------------------------
+       HIGH-CONTRAST CONVERSION BUTTON OVERRIDES (White Text & Red Phone Icon)
+       -------------------------------------------------------------------------- */
+    .btn-primary, 
+    .call-hotline-btn, 
+    .mobile-call-btn, 
+    .nav-cta.btn-primary {
+      color: #ffffff !important; 
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary .phone-icon-svg, 
+    .call-hotline-btn .phone-icon-svg, 
+    .mobile-call-btn .phone-icon-svg,
+    .nav-cta.btn-primary .phone-icon-svg {
+      stroke: #ef4444 !important; /* Bright red vector line */
+      fill: none !important;
+      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+      flex-shrink: 0;
+    }
+
+    /* --------------------------------------------------------------------------
+       3. HIGH-CONTRAST LIGHT BLUE TOP BAR
+       -------------------------------------------------------------------------- */
+    .top-bar {
+      background-color: var(--secondary-light); 
+      color: #1e3a8a; 
+      font-size: 0.875rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .top-bar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .top-bar-left span {
+      color: #1e3a8a;
+      font-weight: 600;
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .top-bar-right a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 800; 
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .top-bar-right a:hover {
+      text-decoration: underline;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    .status-badge.open {
+      background-color: rgba(34, 197, 94, 0.2);
+      color: #166534;
+    }
+
+    .status-badge.closed {
+      background-color: rgba(239, 68, 68, 0.2);
+      color: #991b1b;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    .status-badge.open .status-dot {
+      background-color: var(--accent-green);
+      box-shadow: 0 0 8px var(--accent-green);
+    }
+
+    .status-badge.closed .status-dot {
+      background-color: var(--accent-red);
+      box-shadow: 0 0 8px var(--accent-red);
+    }
+
+    .main-header {
+      background-color: rgba(255, 255, 255, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 1.4rem;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--gray-text);
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta.btn-primary {
+      padding: 0.65rem 1.25rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--dark);
+      border-radius: 3px;
+      transition: var(--transition);
+    }
+
+    /* --------------------------------------------------------------------------
+       4. HERO SECTION
+       -------------------------------------------------------------------------- */
+    .hero {
+      position: relative;
+      background-color: var(--white);
+      padding: 6rem 0;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      font-weight: 800;
+    }
+
+    .hero-content p {
+      font-size: 1.15rem;
+      color: var(--gray-text);
+      margin-bottom: 2rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-call-btn {
+      font-size: 1.1rem;
+      padding: 1rem 2.25rem;
+    }
+
+    .hero-trust-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
+      color: var(--gray-text);
+    }
+
+    .trust-item svg {
+      color: var(--primary);
+    }
+
+    /* --------------------------------------------------------------------------
+       5. STATS BAR
+       -------------------------------------------------------------------------- */
+    .stats-bar {
+      background-color: var(--secondary-light);
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    /* --------------------------------------------------------------------------
+       6. SERVICES SECTION
+       -------------------------------------------------------------------------- */
+    .services {
+      background-color: var(--light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      border-color: var(--primary);
+    }
+
+    .service-card-body {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--gray-text);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+
+    .service-link:hover {
+      text-decoration: underline;
+    }
+
+    /* --------------------------------------------------------------------------
+       7. ABOUT SECTION
+       -------------------------------------------------------------------------- */
+    .about {
+      background-color: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-content h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p {
+      color: var(--gray-text);
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .badge-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .badge-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .badge-card p {
+      font-size: 0.875rem;
+      margin: 0;
+    }
+
+    /* --------------------------------------------------------------------------
+       8. REVIEWS SECTION
+       -------------------------------------------------------------------------- */
+    .reviews {
+      background-color: var(--light);
+    }
+
+    .featured-testimonial-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .featured-testimonial {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      border: 1px solid var(--border);
+      padding: 3rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      position: relative;
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonial-stars svg {
+      fill: #eab308; 
+      color: #eab308;
+    }
+
+    .testimonial-text {
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--dark);
+      font-weight: 500;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-author-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+
+    .author-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .author-initials-placeholder {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--secondary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .author-meta h4 {
+      font-size: 1.05rem;
+    }
+
+    .author-meta p {
+      font-size: 0.85rem;
+      color: var(--gray-text);
+    }
+
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--gray-text);
+      background-color: var(--light);
+      padding: 0.4rem 0.8rem;
+      border-radius: 50px;
+    }
+
+    /* --------------------------------------------------------------------------
+       9. SERVICE AREA & MAP SECTION
+       -------------------------------------------------------------------------- */
+    .service-area {
+      background-color: var(--white);
+    }
+
+    .service-area-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .service-area-content h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-area-content p {
+      color: var(--gray-text);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+
+    .checklist-item svg {
+      color: var(--accent-green);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 450px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .map-footer-link {
+      display: block;
+      text-align: right;
+      margin-top: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .map-footer-link:hover {
+      text-decoration: underline;
+    }
+
+    /* --------------------------------------------------------------------------
+       10. CONTACT & HIGH-CONVERTING DIRECT CALL PANEL
+       -------------------------------------------------------------------------- */
+    .contact {
+      background-color: var(--light);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 4rem;
+    }
+
+    .contact-info-card {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 3rem;
+      border-radius: var(--border-radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .contact-info-card h2 {
+      color: var(--white);
+      font-size: 2.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info-card p {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .info-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .info-icon-box {
+      width: 44px;
+      height: 44px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary);
+      flex-shrink: 0;
+    }
+
+    .info-text-box h4 {
+      color: var(--white);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .info-text-box a, .info-text-box p {
+      color: var(--white);
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .info-text-box a:hover {
+      color: var(--secondary);
+    }
+
+    .booking-hotline-card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--border-radius);
+      padding: 3rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .booking-hotline-card h3 {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .booking-hotline-card p {
+      color: var(--gray-text);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .call-hotline-btn {
+      width: 100%;
+      font-size: 1.35rem; 
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      background-color: var(--primary);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: var(--transition);
+      letter-spacing: 0.03em;
+      box-shadow: 0 4px 15px rgba(29, 78, 216, 0.25);
+    }
+
+    .call-hotline-btn:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(29, 78, 216, 0.4);
+    }
+
+    .booking-steps {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      background-color: var(--secondary-light);
+      color: var(--primary);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    /* --------------------------------------------------------------------------
+       11. STICKY MOBILE CALL BUTTON
+       -------------------------------------------------------------------------- */
+    .mobile-sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--white);
+      box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+      padding: 0.75rem 1rem;
+      z-index: 1000;
+      display: none;
+    }
+
+    .mobile-call-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.85rem;
+      background-color: var(--primary);
+      text-decoration: none;
+      font-size: 1.15rem;
+      padding: 1.1rem;
+      border-radius: 8px;
+      letter-spacing: 0.02em;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(29, 78, 216, 0.35);
+      }
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(29, 78, 216, 0.5);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(29, 78, 216, 0.35);
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       12. FOOTER SECTION
+       -------------------------------------------------------------------------- */
+    .main-footer {
+      background-color: var(--dark);
+      color: #94a3b8;
+      padding: 4rem 0 2rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-col p {
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .footer-logo {
+      color: var(--white);
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.875rem;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom-links a {
+      color: #94a3b8;
+      text-decoration: none;
+    }
+
+    .footer-bottom-links a:hover {
+      color: var(--white);
+    }
+
+    /* --------------------------------------------------------------------------
+       13. RESPONSIVE DESIGN (MEDIA QUERIES)
+       -------------------------------------------------------------------------- */
+    @media (max-width: 1024px) {
+      .hero-grid, .about-grid, .service-area-grid, .contact-grid {
+        gap: 2.5rem;
+      }
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: 80px; 
+      }
+      .section-padding {
+        padding: 4rem 0;
+      }
+      .section-header h2 {
+        font-size: 1.85rem;
+      }
+      .top-bar {
+        display: none; 
+      }
+      .nav-toggle {
+        display: flex;
+      }
+      .nav-menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        border-top: 1px solid var(--border);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        display: none;
+      }
+      .nav-menu.active {
+        display: flex;
+      }
+      .nav-cta {
+        width: 100%;
+      }
+      .hero-grid, .about-grid, .service-area-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding: 4rem 0;
+      }
+      .hero-content {
+        text-align: center;
+      }
+      .hero-ctas {
+        justify-content: center;
+      }
+      .hero-trust-list {
+        align-items: center;
+      }
+      .hero-img-container {
+        height: 350px;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .about-grid {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .featured-testimonial {
+        padding: 2rem 1.5rem;
+      }
+      .testimonial-text {
+        font-size: 1.1rem;
+      }
+      .booking-hotline-card {
+        padding: 2rem 1.5rem;
+      }
+      .mobile-sticky-bar {
+        display: block;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- LocalBusiness JSON-LD Schema (Structured Data for Local SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HouseCleaning",
+    "name": "ProMaid Cleaners LLC",
+    "image": "https://promaidcleaners.github.io/hero-image.jpg",
+    "url": "https://promaidcleaners.github.io/",
+    "telephone": "+13214627875",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "583 Gancedo St SW",
+      "addressLocality": "Palm Bay",
+      "addressRegion": "FL",
+      "postalCode": "32908",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.306727,
+      "longitude": -80.6861594
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+13214627875",
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": "en"
+    },
+    "sameAs": [
+      "https://www.google.com/maps/place/ProMaid+Cleaners/@28.306727,-80.6861594,9z/data=!4m2!3m1!1s0x22975143b0d9deb7:0xdabc604b864fc820"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- --------------------------------------------------------------------------
+     TOP BAR WITH LIVE INDICATOR
+     -------------------------------------------------------------------------- -->
+  <div class="top-bar">
+    <div class="top-bar-content container">
+      <div class="top-bar-left">
+        <span>Serving Palm Bay, FL & Surrounding Space Coast Areas</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:3214627875">
+          <svg class="phone-icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Call: (321) 462-7875
+        </a>
+        <div id="status-badge" class="status-badge closed">
+          <span class="status-dot"></span>
+          <span id="status-text">DETECTING STATUS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------------------------------------------------------
+     MAIN NAVIGATION
+     -------------------------------------------------------------------------- -->
+  <header class="main-header">
+    <div class="nav-container container">
+      <a href="#" class="logo">
+        <svg viewBox="0 0 100 100" width="34" height="34" xmlns="http://www.w3.org/2000/svg" style="fill: var(--primary);">
+          <circle cx="50" cy="50" r="45" fill="var(--secondary-light)" />
+          <path d="M50 20 L55 38 L73 43 L55 48 L50 66 L45 48 L27 43 L45 38 Z" fill="var(--primary)" />
+          <circle cx="35" cy="65" r="7" fill="var(--secondary)" />
+          <circle cx="68" cy="65" r="5" fill="var(--primary)" />
+        </svg>
+        ProMaid <span class="text-blue">Cleaners</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#service-area" class="nav-link">Service Area</a></li>
+        <li>
+          <a href="tel:3214627875" class="nav-link nav-cta btn btn-primary">
+            <svg class="phone-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- --------------------------------------------------------------------------
+       HERO SECTION
+       -------------------------------------------------------------------------- -->
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-content">
+          <h1>Professional <span class="text-blue">House Cleaning</span> & Maid Services Near You</h1>
+          <p>Get a cleaner, healthier home without lifting a finger. ProMaid Cleaners LLC delivers dependable, high-quality residential maid services tailored to your lifestyle and budget.</p>
+          
+          <div class="hero-ctas">
+            <a href="tel:3214627875" class="btn btn-primary hero-call-btn">
+              <svg class="phone-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Call (321) 462-7875
+            </a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+
+          <div class="hero-trust-list">
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Fully Insured & Professionally Trained Staff
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              100% Satisfaction Guarantee
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Flexible Weekly, Bi-Weekly & Custom Booking
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="smart-img-container hero-img-container" data-placeholder="hero-image.jpg">
+            <img src="hero-image.jpg" alt="ProMaid Cleaners Premium Home Cleaning Banner">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------
+       STATS BAR
+       -------------------------------------------------------------------------- -->
+    <section class="stats-bar">
+      <div class="stats-grid container">
+        <div class="stat-col">
+          <div class="stat-number">5-Star</div>
+          <div class="stat-label">Google Rated Reviews</div>
+        </div>
+        <div class="stat-col">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Satisfaction Guaranteed</div>
+        </div>
+        <div class="stat-col">
+          <div class="stat-number">Local</div>
+          <div class="stat-label">Family Owned & Operated</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------
+       SERVICES SECTION
+       -------------------------------------------------------------------------- -->
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Professional Cleaning Services</h2>
+          <p>We provide comprehensive solutions to keep your residential spaces pristine and refreshing.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="smart-img-container service-img-container" data-placeholder="cleaning-team.jpg">
+              <img src="cleaning-team.jpg" alt="Our professional house cleaning team preparing a home">
+            </div>
+            <div class="service-card-body">
+              <h3>House Cleaning & Maid Service</h3>
+              <p>Reliable weekly, bi-weekly, or monthly cleaning schedules to keep your everyday living spaces fresh and comfortable.</p>
+              <a href="tel:3214627875" class="service-link">
+                <svg class="phone-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Call to Book →
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="smart-img-container service-img-container" data-placeholder="kitchen-cleaning.jpg">
+              <img src="kitchen-cleaning.jpg" alt="Pristine kitchen surfaces cleaned by ProMaid Cleaners">
+            </div>
+            <div class="service-card-body">
+              <h3>Deep Cleaning Service</h3>
+              <p>An exhaustive, top-to-bottom refresh targeting forgotten areas, baseboards, interiors of key appliances, and grout line restoration.</p>
+              <a href="tel:3214627875" class="service-link">
+                <svg class="phone-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Call to Book →
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="smart-img-container service-img-container" data-placeholder="bathroom-cleaning.jpg">
+              <img src="bathroom-cleaning.jpg" alt="Polished master bathroom layout ready for use">
+            </div>
+            <div class="service-card-body">
+              <h3>Move-In / Move-Out Clean</h3>
+              <p>Comprehensive transition cleaning designed to satisfy lease checklists, impress incoming buyers, or help secure security deposit returns.</p>
+              <a href="tel:3214627875" class="service-link">
+                <svg class="phone-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Call to Book →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------
+       ABOUT US SECTION (Square ratio and looking for "logo.png")
+       -------------------------------------------------------------------------- -->
+    <section id="about" class="about section-padding">
+      <div class="about-grid container">
+        <div class="about-image-wrapper">
+          <div class="smart-img-container logo-img-container" data-placeholder="logo.png">
+            <img src="logo.png" alt="ProMaid Cleaners LLC Brand Logo">
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h2>Your Trusted Local Maid Service</h2>
+          <p>At ProMaid Cleaners LLC, we understand that inviting professionals into your living environment is a matter of profound trust. That is why our locally owned and operated agency takes a methodical approach to choosing and onboarding staff.</p>
+          <p>We combine consistent training, detail-focused quality standards, and eco-friendly products to clean your home thoroughly, safely, and efficiently. Our goal is to return valuable time to you, so you can focus on what matters most.</p>
+          
+          <div class="badge-grid">
+            <div class="badge-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <div>
+                <h4>Vetted & Insured</h4>
+                <p>Background-checked staff and full liability insurance for total peace of mind.</p>
+              </div>
+            </div>
+            <div class="badge-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <div>
+                <h4>Consistent Quality</h4>
+                <p>Our strict multi-point checklists guarantee uniform cleanliness during every visit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------
+       REVIEWS & TESTIMONIALS SECTION
+       -------------------------------------------------------------------------- -->
+    <section id="reviews" class="reviews section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Happy Clients Say</h2>
+          <p>We are committed to earning your five-star review with our detailed attention to customer service.</p>
+        </div>
+
+        <div class="featured-testimonial-wrapper">
+          <div class="featured-testimonial">
+            <div class="testimonial-stars">
+              <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            
+            <blockquote class="testimonial-text">
+              “Five stars, no hesitation. I'd been putting off finding a reliable cleaning service for months, and ProMaid made me wish I'd called sooner. They showed up on time, walked through exactly what they'd be doing, and then delivered on every bit of it. What really got me was how they handled the kitchen — appliances, cabinet fronts, even the grout looked refreshed. It's rare to find a company that treats your home like it's their own. Booking a recurring appointment with them going forward.”
+            </blockquote>
+
+            <div class="testimonial-author-row">
+              <div class="author-info">
+                <div class="author-initials-placeholder">T.B.</div>
+                <div class="author-meta">
+                  <h4>Satisfied Customer</h4>
+                  <p>Verified Homeowner</p>
+                </div>
+              </div>
+              <div class="platform-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color: #4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/></svg>
+                Google Verified Review
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------
+       SERVICE AREA & GOOGLE MAP SECTION
+       -------------------------------------------------------------------------- -->
+    <section id="service-area" class="service-area section-padding">
+      <div class="service-area-grid container">
+        <div class="service-area-content">
+          <h2>Serving Local Homeowners & Surrounding Areas</h2>
+          <p>We are proud to provide residential cleaning services near you. Our service radius is structured to provide consistent, prompt care to homeowners seeking a trusted local maid service. See our interactive service area coverage map to confirm availability.</p>
+          
+          <div class="checklist-grid">
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Palm Bay, FL
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Melbourne, FL
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Cocoa Beach, FL
+            </div>
+            <div class="checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Brevard County
+            </div>
+          </div>
+
+          <a href="tel:3214627875" class="btn btn-primary">
+            <svg class="phone-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Verify Your Zip Code
+          </a>
+        </div>
+
+        <div class="map-wrapper">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1811656.915858638!2d-80.6861594!3d28.306727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22975143b0d9deb7%3A0xdabc604b864fc820!2sProMaid+Cleaners!5e0!3m2!1sen!2sus!4v1710000000000" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="ProMaid Cleaners LLC Google Maps Interactive Location Area">
+            </iframe>
+          </div>
+          <a class="map-footer-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/ProMaid+Cleaners/@28.306727,-80.6861594,9z/data=!4m2!3m1!1s0x22975143b0d9deb7:0xdabc604b864fc820">
+            View Larger Map on Google Maps →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------
+       CONTACT & DIRECT LINE Dispatch Hotline (NO FORM)
+       -------------------------------------------------------------------------- -->
+    <section id="contact" class="contact section-padding">
+      <div class="contact-grid container">
+        <div class="contact-info-card">
+          <div>
+            <h2>Get in Touch Today</h2>
+            <p>Ready to get your home sparkling? Call our office directly to speak with a coordinator and get an instant cleaning quote over the phone.</p>
+            
+            <div class="info-details">
+              <div class="info-row">
+                <div class="info-icon-box">
+                  <!-- Typo corrected: "19.79 19.79 0" replaces old corrupt "19.79(19.79) 0" -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="info-text-box">
+                  <h4>Phone Number</h4>
+                  <a href="tel:3214627875" style="color: var(--white);">(321) 462-7875</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="info-text-box">
+                  <h4>Main Office</h4>
+                  <p>583 Gancedo St SW, Palm Bay, FL 32908</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="info-text-box">
+                  <h4>Hours of Operation</h4>
+                  <p>Monday – Friday: 9:00 AM – 5:00 PM<br>Saturday & Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size: 0.85rem; margin-bottom: 0;">Licensed, Bonded & Insured for your absolute safety.</p>
+        </div>
+
+        <!-- High converting direct line panel -->
+        <div class="booking-hotline-card">
+          <h3>Call For a Fast Estimate</h3>
+          <p>Skip the forms. Call us directly to discuss your home layout, custom clean needs, and lock in your scheduled date instantly.</p>
+          
+          <a href="tel:3214627875" class="call-hotline-btn">
+            <svg class="phone-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call (321) 462-7875
+          </a>
+
+          <div class="booking-steps">
+            <div class="step-item">
+              <span class="step-num">1</span>
+              <span>Explain your house layout & specific needs</span>
+            </div>
+            <div class="step-item">
+              <span class="step-num">2</span>
+              <span>Get an upfront estimate in under 5 minutes</span>
+            </div>
+            <div class="step-item">
+              <span class="step-num">3</span>
+              <span>Select your convenient day & time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- --------------------------------------------------------------------------
+     STICKY MOBILE CALL NOW BAR
+     -------------------------------------------------------------------------- -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:3214627875" class="mobile-call-btn">
+      <svg class="phone-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      Tap to Call Now: (321) 462-7875
+    </a>
+  </div>
+
+  <!-- --------------------------------------------------------------------------
+     FOOTER
+     -------------------------------------------------------------------------- -->
+  <footer class="main-footer">
+    <div class="footer-grid container">
+      <div class="footer-col">
+        <a href="#" class="footer-logo">
+          <svg viewBox="0 0 100 100" width="28" height="28" xmlns="http://www.w3.org/2000/svg" style="fill: var(--secondary);">
+            <circle cx="50" cy="50" r="45" fill="rgba(255, 255, 255, 0.1)" />
+            <path d="M50 20 L55 38 L73 43 L55 48 L50 66 L45 48 L27 43 L45 38 Z" fill="var(--secondary)" />
+          </svg>
+          ProMaid Cleaners
+        </a>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Providing premium local house cleaning and maid services throughout Brevard County, Florida. Fully insured, trusted, and client-focused.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">House Cleaning</a></li>
+          <li><a href="#services">Maid Service</a></li>
+          <li><a href="#services">Deep Cleaning</a></li>
+          <li><a href="#services">Move Out Cleaning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#service-area">Service Area</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">
+          <strong>Phone:</strong> <a href="tel:3214627875" style="color: var(--white); text-decoration: none;">(321) 462-7875</a>
+        </p>
+        <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">
+          <strong>Email:</strong> bookings@promaidcleaners.com
+        </p>
+        <p style="font-size: 0.9rem;">
+          <strong>Office Address:</strong><br>583 Gancedo St SW,<br>Palm Bay, FL 32908
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <div>
+        <p>&copy; 2026 ProMaid Cleaners LLC. All rights reserved.</p>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --------------------------------------------------------------------------
+     JAVASCRIPT SYSTEM
+     -------------------------------------------------------------------------- -->
+  <script>
+    // 1. Mobile Navigation Toggle functionality
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // 2. Real-Time Open / Closed Business Hours System (Updated every minute)
+    function updateLiveStatus() {
+      const badge = document.getElementById('status-badge');
+      const text = document.getElementById('status-text');
+
+      if (!badge || !text) return;
+
+      const now = new Date();
+      const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+
+      // Check Monday (1) to Friday (5)
+      const isWeekday = day >= 1 && day <= 5;
+      
+      // Check 9:00 AM (9:00) to 5:00 PM (17:00)
+      const isWorkingHours = hours >= 9 && hours < 17;
+
+      if (isWeekday && isWorkingHours) {
+        badge.className = 'status-badge open';
+        text.textContent = 'OPEN NOW';
+      } else {
+        badge.className = 'status-badge closed';
+        text.textContent = 'CLOSED NOW';
+      }
+    }
+
+    updateLiveStatus();
+    setInterval(updateLiveStatus, 60000);
+  </script>
+</body>
+</html>
